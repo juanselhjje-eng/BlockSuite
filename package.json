@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "mineflayer": "latest"
+    "minecraft-protocol": "latest"
   }
 }
