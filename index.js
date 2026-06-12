@@ -1,11 +1,15 @@
-const mineflayer = require('mineflayer')
+const mc = require('minecraft-protocol')
 
-const bot = mineflayer.createBot({
+const client = mc.createClient({
   host: 'juanmuland.aternos.me',
   port: 35011,
- username: 'Botsito'
+  username: 'BotAFK'
 })
 
-bot.on('spawn', () => {
+client.on('connect', () => {
   console.log('Bot conectado')
+})
+
+client.on('error', err => {
+  console.log(err)
 })
